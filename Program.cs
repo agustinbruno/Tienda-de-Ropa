@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tienda_de_Ropa.Controladores;
+using Tienda_de_Ropa.Resources;
+using Tienda_de_Ropa.Vistas;
 
 namespace Tienda_de_Ropa
 {
@@ -16,7 +20,20 @@ namespace Tienda_de_Ropa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DB_Controller.initialize();
+
+            if (DB_Controller.validateConnection())
+            {
+                Trace.WriteLine("Conexion a la base de datos establecida con exito");
+            }
+
+            Application.Run(new LoginForm());
+
+            
         }
+
+        
+
+
     }
 }

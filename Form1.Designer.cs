@@ -45,9 +45,9 @@
             this.titulo_abm.AutoSize = true;
             this.titulo_abm.Location = new System.Drawing.Point(76, 19);
             this.titulo_abm.Name = "titulo_abm";
-            this.titulo_abm.Size = new System.Drawing.Size(189, 13);
+            this.titulo_abm.Size = new System.Drawing.Size(91, 13);
             this.titulo_abm.TabIndex = 0;
-            this.titulo_abm.Text = "Alta, Baja y Modificacion de Productos";
+            this.titulo_abm.Text = "Alta de Productos";
             // 
             // nombre
             // 

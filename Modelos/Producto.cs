@@ -16,14 +16,12 @@ namespace Tienda_de_Ropa.Modelos
 
         public double Precio { get; set; }
 
-        public bool Activo { get; set; }
 
         public Producto(int id, string nombre, string descripcion, double precio) {
             Id = id;
             Nombre = nombre;
             Descripcion = descripcion;
             Precio = precio;
-            Activo = true;
         }
 
         public Producto() { }

@@ -20,7 +20,7 @@ namespace Tienda_de_Ropa
         {
             InitializeComponent();
 
-         
+
         }
 
         private void btn_crear_Click(object sender, EventArgs e)
@@ -36,5 +36,7 @@ namespace Tienda_de_Ropa
                 Trace.WriteLine("Fallo la creacion del producto");
             }
         }
+
+      
     }
 }

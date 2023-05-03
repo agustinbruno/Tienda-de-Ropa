@@ -1,1 +1,12 @@
 1;prod1;prod1;1;True
+1;prod1;prod1;1;True
+1;prod1;prod1;1;True
+2;prod2;prod2;2;True
+1;prod1;prod1;1;True
+2;prod2;prod2;25025;True
+2;prod2;prod2;250,25;True
+4;prod4;prod4;100,5;True
+1;prod1;prod1;100,12;True
+2;prod2;prod2;20025;True
+1;prod1;prod1;100,25
+2;prod2;prod2;2000,25
