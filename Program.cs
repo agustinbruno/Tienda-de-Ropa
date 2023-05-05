@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_de_Ropa.Controladores;
-using Tienda_de_Ropa.Resources;
 using Tienda_de_Ropa.Vistas;
 
 namespace Tienda_de_Ropa

@@ -9,7 +9,6 @@ C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Deb
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda de Ropa.csproj.CoreCompileInputs.cache
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda de Ropa.exe
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda de Ropa.pdb
-C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda_de_Ropa.Resources.index.resources
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\bin\Debug\MySqlConnector.dll
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\bin\Debug\System.Buffers.dll
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -26,3 +25,4 @@ C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\bin\Deb
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda_de_Ropa.Vistas.LoginForm.resources
 C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda de Ropa.csproj.CopyComplete
+C:\Users\pablo\Desktop\Facultad\Plataformas de Desarrollo\Tienda de Ropa\obj\Debug\Tienda_de_Ropa.Vistas.Index.resources

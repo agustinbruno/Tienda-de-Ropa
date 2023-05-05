@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_de_Ropa.Controladores;
 using Tienda_de_Ropa.Modelos;
+using Tienda_de_Ropa.Vistas;
 
 namespace Tienda_de_Ropa
 {
@@ -19,24 +20,120 @@ namespace Tienda_de_Ropa
         public Form1()
         {
             InitializeComponent();
+            error_id.Hide();
+            error_nombre.Hide();
+            error_descripcion.Hide();
+            error_precio.Hide();
 
+
+        }
+
+
+        private bool validarInputs(out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            if (string.IsNullOrEmpty(txt_nombre.Text))
+            {
+                errorMsg = "Debe indicar el nombre del producto" + Environment.NewLine;
+                error_nombre.Text = "Debe indicar el nombre del producto";
+                error_nombre.Show();
+            }
+            if (string.IsNullOrEmpty(txt_id.Text))
+            {
+                errorMsg = "Debe indicar el id del producto" + Environment.NewLine;
+                error_id.Text = "Debe indicar el id del producto";
+                error_id.Show();
+            }
+            if (string.IsNullOrEmpty(txt_descripcion.Text))
+            {
+                errorMsg = "Debe indicar la descripcion del producto" + Environment.NewLine;
+                error_descripcion.Text = "Debe indicar la descripcion del producto";
+                error_descripcion.Show();
+            }
+            if (string.IsNullOrEmpty(txt_precio.Text))
+            {
+                errorMsg = "Debe indicar el precio del producto" + Environment.NewLine;
+                error_precio.Text = "Debe indicar el precio del producto";
+                error_precio.Show();
+            }
+            return errorMsg == string.Empty;
 
         }
 
         private void btn_crear_Click(object sender, EventArgs e)
         {
-            Producto producto = new Producto(int.Parse(txt_id.Text),txt_nombre.Text, txt_descripcion.Text, double.Parse(txt_precio.Text));
+            bool inputsValidos = validarInputs(out string errorMsg);
 
-            if (Producto_Controlador.crearProducto(producto))
+            Trace.WriteLine("inputs validados con resultado: " + inputsValidos);
+
+            
+                if (inputsValidos)
+                {
+                    Producto producto = new Producto(int.Parse(txt_id.Text), txt_nombre.Text, txt_descripcion.Text, double.Parse(txt_precio.Text));
+                    Producto_Controlador.crearProducto(producto);
+                    MessageBox.Show("Producto creado con exito");
+                    Form1 form1 = new Form1();
+                    this.Hide();
+                    form1.ShowDialog();
+            }
+                else
+                {
+                    Trace.WriteLine("Fallo la creacion del producto");
+                }
+            }
+
+        private void txt_id_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar))
             {
-                Trace.WriteLine("Producto creado con exito");
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
             }
             else
             {
-                Trace.WriteLine("Fallo la creacion del producto");
+                e.Handled = true;
             }
         }
 
+        private void txt_precio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar) || e.KeyChar == ',' || e.KeyChar == '.')
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+
+        private void btn_atras_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            this.Hide();
+            index.Show();
+        }
+
+       
+    }
+
       
     }
-}
+

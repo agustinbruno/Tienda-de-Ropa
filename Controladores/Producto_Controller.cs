@@ -50,13 +50,57 @@ namespace Tienda_de_Ropa.Controladores
                 {
                     archivo.WriteLine(linea);
                 }
-
                 return true;
-
             }
             catch (Exception ex)
             {
                 Trace.WriteLine("Ocurrio un error al intentar escribir el producto: " + ex.Message);
+                return false;
+            }
+        }
+
+
+        public static bool modificarProducto(Producto producto)
+        {
+            string query = "insert into dbo.producto values" +
+                "(@id, " +
+                "@nombre, " +
+                "@descripcion, " +
+                "@precio " +
+                ");";
+
+            SqlCommand cmd = new SqlCommand(query, DB_Controller.connection);
+            cmd.Parameters.AddWithValue("@id", producto.Id);
+            cmd.Parameters.AddWithValue("@nombre", producto.Nombre);
+            cmd.Parameters.AddWithValue("@descripcion", producto.Descripcion);
+            cmd.Parameters.AddWithValue("@precio", producto.Precio);
+
+            try
+            {
+                DB_Controller.connection.Open();
+                cmd.ExecuteNonQuery();
+                DB_Controller.connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+
+
+            try
+            {
+                string linea = producto.Id + ";" + producto.Nombre + ";" + producto.Descripcion + ";" + producto.Precio;
+                using (StreamWriter archivo = new StreamWriter(ruta, true))
+                {
+                    archivo.WriteLine(linea);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine("Ocurrio un error al intentar modificar el producto: " + ex.Message);
                 return false;
             }
         }

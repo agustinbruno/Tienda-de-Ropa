@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_de_Ropa.Controladores;
 using Tienda_de_Ropa.Modelos;
-using Tienda_de_Ropa.Resources;
 using Tienda_de_Ropa.Vistas;
 
 namespace Tienda_de_Ropa.Vistas
@@ -20,9 +19,7 @@ namespace Tienda_de_Ropa.Vistas
         public LoginForm()
         {
             InitializeComponent();
-            lbl_error_usuario.Hide();
-            lbl_error_contraseña.Hide();
-            lbl_error_usuario_contraseña.Hide();
+            lbl_error_login.Hide();
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -33,39 +30,43 @@ namespace Tienda_de_Ropa.Vistas
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if (validarInputsLogin(out string errorMsj))
+            if (validarInputsLogin())
             {
-
-                if (Usuario_Controller.validarUsuario(txt_usuario.Text,txt_contraseña.Text))
-                {
-                    Trace.WriteLine("Contraseña correcta");
-                    Index index = new Index();
-                    this.Hide();
-                    index.Show();
-                }
-                else
-                {
-                    Trace.WriteLine("Contraseña incorrectaaa");
-                    lbl_error_usuario_contraseña.Show();
-                }
-             
+                Trace.WriteLine("Contraseña correcta");
+                Index index = new Index();
+                this.Hide();
+                index.Show();
+            }
+            else
+            {
+                txt_usuario.Clear();
+                txt_contraseña.Clear();    
             }
             
         }
-           
-        private bool validarInputsLogin(out string errorMsj)
+
+        private bool validarInputsLogin()
         {
-            errorMsj = string.Empty;
-            if(string.IsNullOrEmpty(txt_usuario.Text) )
+
+            if (string.IsNullOrEmpty(txt_usuario.Text) || string.IsNullOrEmpty(txt_contraseña.Text))
             {
 
+                lbl_error_login.Text = "Alguno de los campos esta vacio";
+                lbl_error_login.Show();
+                return false;
             }
-            if(string.IsNullOrEmpty(txt_contraseña.Text))
+            else if (Usuario_Controller.validarUsuario(txt_usuario.Text, txt_contraseña.Text))
+            {              
+                return true;
+            }
+            else
             {
-
+                lbl_error_login.Text = "Usuario y/o contraseña incorrecto";
+                lbl_error_login.Show();
+                return false;
             }
 
-            return errorMsj == String.Empty;
+           
         }
 
     }

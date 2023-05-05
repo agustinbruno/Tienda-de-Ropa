@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tienda_de_Ropa.Resources
+namespace Tienda_de_Ropa
 {
-    public partial class index : Form
+    public partial class FormBajaProd : Form
     {
-        public index()
+        public FormBajaProd()
         {
             InitializeComponent();
-            
-        }
-
-        private void btn_producto_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
         }
     }
 }

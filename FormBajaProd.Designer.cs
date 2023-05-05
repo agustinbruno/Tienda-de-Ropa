@@ -1,6 +1,6 @@
-﻿namespace Tienda_de_Ropa.Resources
+﻿namespace Tienda_de_Ropa
 {
-    partial class Index
+    partial class FormBajaProd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_producto = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // btn_producto
-            // 
-            this.btn_producto.Location = new System.Drawing.Point(233, 44);
-            this.btn_producto.Name = "btn_producto";
-            this.btn_producto.Size = new System.Drawing.Size(104, 36);
-            this.btn_producto.TabIndex = 0;
-            this.btn_producto.Text = "Agregar un producto";
-            this.btn_producto.UseVisualStyleBackColor = true;
-            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
-            // 
-            // Index
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_producto);
-            this.Name = "Index";
-            this.Text = "Index";
-            this.ResumeLayout(false);
-
+            this.Text = "FormBajaProd";
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_producto;
     }
 }

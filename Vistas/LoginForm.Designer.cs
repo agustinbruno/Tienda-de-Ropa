@@ -35,9 +35,7 @@
             this.lbl_contraseña = new System.Windows.Forms.Label();
             this.lbl_titulo_login = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
-            this.lbl_error_usuario = new System.Windows.Forms.Label();
-            this.lbl_error_contraseña = new System.Windows.Forms.Label();
-            this.lbl_error_usuario_contraseña = new System.Windows.Forms.Label();
+            this.lbl_error_login = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_login
@@ -70,6 +68,7 @@
             // 
             this.txt_contraseña.Location = new System.Drawing.Point(232, 200);
             this.txt_contraseña.Name = "txt_contraseña";
+            this.txt_contraseña.PasswordChar = '*';
             this.txt_contraseña.Size = new System.Drawing.Size(187, 20);
             this.txt_contraseña.TabIndex = 3;
             // 
@@ -101,41 +100,21 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // lbl_error_usuario
+            // lbl_error_login
             // 
-            this.lbl_error_usuario.AutoSize = true;
-            this.lbl_error_usuario.Location = new System.Drawing.Point(463, 104);
-            this.lbl_error_usuario.Name = "lbl_error_usuario";
-            this.lbl_error_usuario.Size = new System.Drawing.Size(120, 13);
-            this.lbl_error_usuario.TabIndex = 7;
-            this.lbl_error_usuario.Text = "Error al Ingresar Usuario";
-            // 
-            // lbl_error_contraseña
-            // 
-            this.lbl_error_contraseña.AutoSize = true;
-            this.lbl_error_contraseña.Location = new System.Drawing.Point(463, 203);
-            this.lbl_error_contraseña.Name = "lbl_error_contraseña";
-            this.lbl_error_contraseña.Size = new System.Drawing.Size(138, 13);
-            this.lbl_error_contraseña.TabIndex = 8;
-            this.lbl_error_contraseña.Text = "Error al Ingresar Contraseña";
-            // 
-            // lbl_error_usuario_contraseña
-            // 
-            this.lbl_error_usuario_contraseña.AutoSize = true;
-            this.lbl_error_usuario_contraseña.Location = new System.Drawing.Point(285, 252);
-            this.lbl_error_usuario_contraseña.Name = "lbl_error_usuario_contraseña";
-            this.lbl_error_usuario_contraseña.Size = new System.Drawing.Size(156, 13);
-            this.lbl_error_usuario_contraseña.TabIndex = 9;
-            this.lbl_error_usuario_contraseña.Text = "Error en el usuario y contraseña";
+            this.lbl_error_login.AutoSize = true;
+            this.lbl_error_login.Location = new System.Drawing.Point(272, 160);
+            this.lbl_error_login.Name = "lbl_error_login";
+            this.lbl_error_login.Size = new System.Drawing.Size(120, 13);
+            this.lbl_error_login.TabIndex = 7;
+            this.lbl_error_login.Text = "Error al Ingresar Usuario";
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl_error_usuario_contraseña);
-            this.Controls.Add(this.lbl_error_contraseña);
-            this.Controls.Add(this.lbl_error_usuario);
+            this.Controls.Add(this.lbl_error_login);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.lbl_titulo_login);
             this.Controls.Add(this.lbl_contraseña);
@@ -159,8 +138,6 @@
         private System.Windows.Forms.Label lbl_contraseña;
         private System.Windows.Forms.Label lbl_titulo_login;
         private System.Windows.Forms.Button btn_cancelar;
-        private System.Windows.Forms.Label lbl_error_usuario;
-        private System.Windows.Forms.Label lbl_error_contraseña;
-        private System.Windows.Forms.Label lbl_error_usuario_contraseña;
+        private System.Windows.Forms.Label lbl_error_login;
     }
 }
