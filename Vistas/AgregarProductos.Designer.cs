@@ -1,6 +1,6 @@
 ﻿namespace Tienda_de_Ropa
 {
-    partial class Form1
+    partial class AgregarProductos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -133,6 +133,8 @@
             // error_id
             // 
             this.error_id.AutoSize = true;
+            this.error_id.BackColor = System.Drawing.Color.Transparent;
+            this.error_id.ForeColor = System.Drawing.Color.IndianRed;
             this.error_id.Location = new System.Drawing.Point(312, 49);
             this.error_id.Name = "error_id";
             this.error_id.Size = new System.Drawing.Size(102, 13);
@@ -176,7 +178,7 @@
             this.btn_atras.UseVisualStyleBackColor = true;
             this.btn_atras.Click += new System.EventHandler(this.btn_atras_Click);
             // 
-            // Form1
+            // AgregarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,8 +198,8 @@
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.titulo_abm);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "AgregarProductos";
+            this.Text = "Agregar Productos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,7 +17,7 @@ namespace Tienda_de_Ropa.Controladores
         public static void initialize()
         {
             var builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "DESKTOP-F0RDMJD\\SQLEXPRESS";
+            builder.DataSource = "DESKTOP-JL198AA\\SQLEXPRESS";
             builder.InitialCatalog = "local";
             builder.IntegratedSecurity = true;
 

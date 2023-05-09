@@ -14,10 +14,10 @@ using Tienda_de_Ropa.Vistas;
 
 namespace Tienda_de_Ropa
 {
-    public partial class Form1 : Form
+    public partial class AgregarProductos : Form
     {
         
-        public Form1()
+        public AgregarProductos()
         {
             InitializeComponent();
             error_id.Hide();
@@ -73,7 +73,7 @@ namespace Tienda_de_Ropa
                     Producto producto = new Producto(int.Parse(txt_id.Text), txt_nombre.Text, txt_descripcion.Text, double.Parse(txt_precio.Text));
                     Producto_Controlador.crearProducto(producto);
                     MessageBox.Show("Producto creado con exito");
-                    Form1 form1 = new Form1();
+                    AgregarProductos form1 = new AgregarProductos();
                     this.Hide();
                     form1.ShowDialog();
             }

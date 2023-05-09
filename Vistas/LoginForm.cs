@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_de_Ropa.Controladores;
-using Tienda_de_Ropa.Modelos;
-using Tienda_de_Ropa.Vistas;
+
 
 namespace Tienda_de_Ropa.Vistas
 {
@@ -37,18 +30,12 @@ namespace Tienda_de_Ropa.Vistas
                 this.Hide();
                 index.Show();
             }
-            else
-            {
-                txt_usuario.Clear();
-                txt_contraseña.Clear();    
-            }
-            
         }
 
         private bool validarInputsLogin()
         {
 
-            if (string.IsNullOrEmpty(txt_usuario.Text) || string.IsNullOrEmpty(txt_contraseña.Text))
+            if (string.IsNullOrEmpty(txt_usuario.Text) || string.IsNullOrEmpty(txt_contraseña.Text) || txt_contraseña.Text=="Contraseña" || txt_usuario.Text=="Usuario")
             {
 
                 lbl_error_login.Text = "Alguno de los campos esta vacio";
@@ -67,6 +54,55 @@ namespace Tienda_de_Ropa.Vistas
             }
 
            
+        }
+
+        private void btn_minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txt_usuario_Enter(object sender, EventArgs e)
+        {
+            if(txt_usuario.Text == "Usuario")
+            {
+                txt_usuario.Text = "";
+                txt_usuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_usuario_Leave(object sender, EventArgs e)
+        {
+            if (txt_usuario.Text == "")
+            {
+                txt_usuario.Text = "Usuario";
+                txt_usuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_contraseña_Enter(object sender, EventArgs e)
+        {
+            if (txt_contraseña.Text == "Contraseña")
+            {
+                txt_contraseña.Text = "";
+                txt_contraseña.ForeColor = Color.Black;
+                txt_contraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txt_contraseña_Leave(object sender, EventArgs e)
+        {
+            if (txt_contraseña.Text == "")
+            {
+                txt_contraseña.Text = "Contraseña";
+                txt_contraseña.ForeColor = Color.Black;
+                txt_contraseña.UseSystemPasswordChar = false;
+
+            }
         }
 
     }
