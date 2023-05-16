@@ -14,10 +14,10 @@ namespace Tienda_de_Ropa.Modelos
 
         public String Descripcion { get; set; }
 
-        public double Precio { get; set; }
+        public decimal Precio { get; set; }
 
 
-        public Producto(int id, string nombre, string descripcion, double precio) {
+        public Producto(int id, string nombre, string descripcion, decimal precio) {
             Id = id;
             Nombre = nombre;
             Descripcion = descripcion;

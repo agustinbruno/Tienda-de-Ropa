@@ -124,5 +124,60 @@ namespace Tienda_de_Ropa.Controladores
                 throw new Exception("Hay un error en la query: " + ex.Message);
             }
         }
+
+        public static Producto obtenerProducto(int id)
+        {
+            Producto producto = new Producto();
+            string query = "select * from dbo.producto WHERE id = @id";
+            SqlCommand cmd = new SqlCommand(query, DB_Controller.connection);
+            cmd.Parameters.AddWithValue("id", id);
+
+            try
+            {
+                DB_Controller.connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Trace.WriteLine("Prod encontrado, nombre: " + reader.GetString(0));
+                    producto = new Producto(reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetDecimal(3));
+                }
+                reader.Close();
+                DB_Controller.connection.Close();
+                return producto;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Hay un error en la query: " + ex.Message);
+            }
+        }
+
+        public static List<Producto> obtenerTodos()
+        {
+            List<Producto> list = new List<Producto>();
+            string query = "select * from dbo.producto";
+            SqlCommand cmd = new SqlCommand(query, DB_Controller.connection);
+
+            try
+            {
+                DB_Controller.connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new Producto(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetDecimal(3)));
+                    Trace.WriteLine("Prod encontrado, nombre: " + reader.GetString(1));
+                }
+                reader.Close();
+                DB_Controller.connection.Close();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Hay un error en la query: " + ex.Message);
+            }
+            return list;
+        }
+
+
     }
 }

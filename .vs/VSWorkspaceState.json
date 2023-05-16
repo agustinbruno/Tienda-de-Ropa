@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Properties",
-    "\\Resources",
-    "\\Vistas"
+    "\\Controladores"
   ],
-  "SelectedNode": "\\Vistas\\Index.cs",
+  "SelectedNode": "\\Controladores\\DB_Controller.cs",
   "PreviewInSolutionExplorer": false
 }
