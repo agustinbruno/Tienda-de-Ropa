@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controladores"
+    "\\Controladores",
+    "\\Modelos",
+    "\\obj",
+    "\\Vistas"
   ],
-  "SelectedNode": "\\Controladores\\DB_Controller.cs",
+  "SelectedNode": "\\Vistas\\Productos.cs",
   "PreviewInSolutionExplorer": false
 }
