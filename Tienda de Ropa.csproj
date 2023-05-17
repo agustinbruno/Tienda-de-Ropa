@@ -87,6 +87,12 @@
     <Compile Include="Modelos\Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\EliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Estadisticas.resx">
       <DependentUpon>Estadisticas.cs</DependentUpon>

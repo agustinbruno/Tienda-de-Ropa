@@ -88,3 +88,4 @@ C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.csproj.Co
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.csproj.CopyComplete
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.exe
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.pdb
+C:\Users\pablo\source\repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Vistas.EliminarProducto.resources

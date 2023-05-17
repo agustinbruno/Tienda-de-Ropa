@@ -73,9 +73,9 @@ namespace Tienda_de_Ropa
                     Producto producto = new Producto(int.Parse(txt_id.Text), txt_nombre.Text, txt_descripcion.Text, decimal.Parse(txt_precio.Text));
                     Producto_Controlador.crearProducto(producto);
                     MessageBox.Show("Producto creado con exito");
-                    AgregarProductos form1 = new AgregarProductos();
+                    AgregarProductos agregarProductos = new AgregarProductos();
                     this.Hide();
-                    form1.ShowDialog();
+                    agregarProductos.Close();
             }
                 else
                 {

@@ -35,6 +35,8 @@
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Imagen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_agregar_producto = new System.Windows.Forms.Button();
+            this.btn_eliminar_producto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +58,9 @@
             this.Descripcion,
             this.Precio,
             this.Imagen});
-            this.tablaProductos.Location = new System.Drawing.Point(29, 59);
+            this.tablaProductos.Location = new System.Drawing.Point(29, 200);
             this.tablaProductos.Name = "tablaProductos";
-            this.tablaProductos.Size = new System.Drawing.Size(930, 557);
+            this.tablaProductos.Size = new System.Drawing.Size(566, 416);
             this.tablaProductos.TabIndex = 1;
             // 
             // Id
@@ -86,11 +88,33 @@
             this.Imagen.HeaderText = "Imagen";
             this.Imagen.Name = "Imagen";
             // 
+            // btn_agregar_producto
+            // 
+            this.btn_agregar_producto.Location = new System.Drawing.Point(42, 78);
+            this.btn_agregar_producto.Name = "btn_agregar_producto";
+            this.btn_agregar_producto.Size = new System.Drawing.Size(127, 54);
+            this.btn_agregar_producto.TabIndex = 2;
+            this.btn_agregar_producto.Text = "Agregar Producto Nuevo";
+            this.btn_agregar_producto.UseVisualStyleBackColor = true;
+            this.btn_agregar_producto.Click += new System.EventHandler(this.btn_agregar_producto_Click);
+            // 
+            // btn_eliminar_producto
+            // 
+            this.btn_eliminar_producto.Location = new System.Drawing.Point(214, 78);
+            this.btn_eliminar_producto.Name = "btn_eliminar_producto";
+            this.btn_eliminar_producto.Size = new System.Drawing.Size(116, 53);
+            this.btn_eliminar_producto.TabIndex = 3;
+            this.btn_eliminar_producto.Text = "Eliminar Producto";
+            this.btn_eliminar_producto.UseVisualStyleBackColor = true;
+            this.btn_eliminar_producto.Click += new System.EventHandler(this.btn_eliminar_producto_Click);
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1186, 628);
+            this.Controls.Add(this.btn_eliminar_producto);
+            this.Controls.Add(this.btn_agregar_producto);
             this.Controls.Add(this.tablaProductos);
             this.Controls.Add(this.label1);
             this.Name = "Productos";
@@ -110,5 +134,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Imagen;
+        private System.Windows.Forms.Button btn_agregar_producto;
+        private System.Windows.Forms.Button btn_eliminar_producto;
     }
 }

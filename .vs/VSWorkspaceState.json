@@ -3,9 +3,8 @@
     "",
     "\\Controladores",
     "\\Modelos",
-    "\\obj",
-    "\\Vistas"
+    "\\obj"
   ],
-  "SelectedNode": "\\Vistas\\Productos.cs",
+  "SelectedNode": "\\Modelos\\Producto.cs",
   "PreviewInSolutionExplorer": false
 }

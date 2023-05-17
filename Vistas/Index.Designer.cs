@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 404);
+            this.panel1.Size = new System.Drawing.Size(180, 628);
             this.panel1.TabIndex = 1;
             // 
             // button_Estadisticas
@@ -124,7 +124,7 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(180, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(636, 404);
+            this.panelContenedor.Size = new System.Drawing.Size(1000, 628);
             this.panelContenedor.TabIndex = 3;
             // 
             // Index
@@ -132,7 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(816, 404);
+            this.ClientSize = new System.Drawing.Size(1180, 628);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.pictureBox_Burguer);
             this.Controls.Add(this.panel1);

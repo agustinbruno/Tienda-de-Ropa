@@ -59,7 +59,6 @@ namespace Tienda_de_Ropa.Controladores
             }
         }
 
-
         public static bool modificarProducto(Producto producto)
         {
             string query = "insert into dbo.producto values" +

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,30 @@ namespace Tienda_de_Ropa.Vistas
                 tablaProductos.Rows[rowIndex].Cells[3].Value = prod.Precio.ToString();
             }
 
+        }
+
+        private void btn_agregar_producto_Click(object sender, EventArgs e)
+        {
+            AgregarProductos agregarProductos = new AgregarProductos();
+            DialogResult dialogResult = agregarProductos.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+            {
+                Trace.WriteLine("OK");
+                mostrarProductos();
+            }
+        }
+
+        private void btn_eliminar_producto_Click(object sender, EventArgs e)
+        {
+            EliminarProducto eliminarProducto = new EliminarProducto();
+            DialogResult dialogResult = eliminarProducto.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+            {
+                Trace.WriteLine("OK");
+                
+            }
         }
     }
 }
