@@ -16,6 +16,5 @@ namespace Tienda_de_Ropa.Vistas
         {
             InitializeComponent();
         }
-
     }
 }

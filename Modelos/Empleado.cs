@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tienda_de_Ropa.Modelos.Enums;
 
 namespace Tienda_de_Ropa.Modelos
 {
@@ -16,6 +17,15 @@ namespace Tienda_de_Ropa.Modelos
 
         public string Contraseña { get; set; }
 
-        public string Rol { get; set; }
+        public Rol Rol { get; set; }
+
+        public Empleado(int id, string nombre, string contraseña, int rol)
+        {
+            Id = id;
+            Nombre = nombre;
+            Contraseña = contraseña;
+            Rol = (Rol)rol;
+        }
+
     }
 }

@@ -26,7 +26,9 @@ namespace Tienda_de_Ropa.Vistas
             if (validarInputsLogin())
             {
                 Trace.WriteLine("Contraseña correcta");
-                Index index = new Index();
+               // var emp = Usuario_Controller.obtenerEmpleado(txt_usuario.Text);
+               // var rol = (int)emp.Rol;
+                Index index = new Index(2);
                 this.Hide();
                 index.Show();
             }

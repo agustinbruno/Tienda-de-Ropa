@@ -126,12 +126,20 @@ namespace Tienda_de_Ropa
 
         private void btn_atras_Click(object sender, EventArgs e)
         {
-            Index index = new Index();
+            Index index = new Index(1);
             this.Hide();
             index.Show();
         }
 
-       
+        private void id_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgregarProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
       

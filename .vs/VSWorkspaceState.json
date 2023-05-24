@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controladores",
-    "\\Modelos",
-    "\\obj"
+    "\\obj",
+    "\\Vistas"
   ],
-  "SelectedNode": "\\Modelos\\Producto.cs",
+  "SelectedNode": "\\Vistas\\EliminarProducto.cs",
   "PreviewInSolutionExplorer": false
 }

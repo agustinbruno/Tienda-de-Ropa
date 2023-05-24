@@ -69,7 +69,7 @@
             this.button_Estadisticas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button_Estadisticas.Image = ((System.Drawing.Image)(resources.GetObject("button_Estadisticas.Image")));
             this.button_Estadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Estadisticas.Location = new System.Drawing.Point(3, 242);
+            this.button_Estadisticas.Location = new System.Drawing.Point(0, 229);
             this.button_Estadisticas.Name = "button_Estadisticas";
             this.button_Estadisticas.Size = new System.Drawing.Size(180, 37);
             this.button_Estadisticas.TabIndex = 2;
@@ -99,13 +99,13 @@
             this.button_Productos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button_Productos.Image = ((System.Drawing.Image)(resources.GetObject("button_Productos.Image")));
             this.button_Productos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Productos.Location = new System.Drawing.Point(0, 110);
+            this.button_Productos.Location = new System.Drawing.Point(0, 141);
             this.button_Productos.Name = "button_Productos";
-            this.button_Productos.Size = new System.Drawing.Size(180, 37);
+            this.button_Productos.Size = new System.Drawing.Size(177, 37);
             this.button_Productos.TabIndex = 0;
             this.button_Productos.Text = "      Productos";
             this.button_Productos.UseVisualStyleBackColor = true;
-            this.button_Productos.Click += new System.EventHandler(this.button_Productos_Click_1);
+            this.button_Productos.Click += new System.EventHandler(this.button_Productos_Click);
             // 
             // pictureBox_Burguer
             // 

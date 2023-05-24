@@ -85,7 +85,7 @@ namespace Tienda_de_Ropa.Vistas
             }
             else
             {
-                Trace.WriteLine("Fallo la creacion del producto");
+                Trace.WriteLine("Fallo la eliminacion del producto");
 
             }
             

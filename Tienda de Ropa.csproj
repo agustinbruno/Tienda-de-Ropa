@@ -72,6 +72,7 @@
     <Compile Include="Controladores\DB_Controller.cs" />
     <Compile Include="Controladores\Producto_Controller.cs" />
     <Compile Include="Controladores\Usuario_Controller.cs" />
+    <Compile Include="Modelos\Enums\Rol.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EliminarProducto.resx">
       <DependentUpon>EliminarProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Estadisticas.resx">
-      <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

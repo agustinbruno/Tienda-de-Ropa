@@ -10,16 +10,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_de_Ropa.Controladores;
 using Tienda_de_Ropa.Modelos;
+using Tienda_de_Ropa.Modelos.Enums;
 
 namespace Tienda_de_Ropa.Vistas
 {
     public partial class Productos : Form
     {
+
+
         List<Producto> productos;
         public Productos()
         {
             InitializeComponent();
             mostrarProductos();
+            
         }
 
         private void mostrarProductos()
@@ -52,6 +56,7 @@ namespace Tienda_de_Ropa.Vistas
             }
         }
 
+        
         private void btn_eliminar_producto_Click(object sender, EventArgs e)
         {
             EliminarProducto eliminarProducto = new EliminarProducto();
@@ -62,6 +67,11 @@ namespace Tienda_de_Ropa.Vistas
                 Trace.WriteLine("OK");
                 
             }
+        }
+
+        private void tablaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

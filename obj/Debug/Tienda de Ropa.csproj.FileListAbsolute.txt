@@ -78,7 +78,6 @@ C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.csproj.As
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda de Ropa.csproj.SuggestedBindingRedirects.cache
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.AgregarProductos.resources
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Properties.Resources.resources
-C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Vistas.Estadisticas.resources
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Vistas.Index.resources
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Vistas.LoginForm.resources
 C:\Users\pablo\Source\Repos\Tienda-de-Ropa-V2\obj\Debug\Tienda_de_Ropa.Vistas.Productos.resources

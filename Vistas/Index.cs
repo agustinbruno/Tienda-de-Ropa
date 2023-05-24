@@ -12,11 +12,15 @@ namespace Tienda_de_Ropa.Vistas
 {
     public partial class Index : Form
     {
-        public Index()
+        public Index(int rol)
         {
             InitializeComponent();
-        }
-
+            if(rol == 1)
+            {
+                button_Productos.Hide();
+            }
+           
+        }    
         private void btn_producto_Click(object sender, EventArgs e)
         {
             AgregarProductos form1 = new AgregarProductos();
@@ -46,14 +50,16 @@ namespace Tienda_de_Ropa.Vistas
             abrirFormInPanel(new Usuarios());
         }
 
+        private void button_Productos_Click(object sender, EventArgs e)
+        {
+            abrirFormInPanel(new Productos());
+        }
+
         private void pictureBox_Burguer_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void button_Productos_Click_1(object sender, EventArgs e)
-        {
-            abrirFormInPanel(new Productos());
-        }
+        
     }
 }

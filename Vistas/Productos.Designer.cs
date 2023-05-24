@@ -58,10 +58,11 @@
             this.Descripcion,
             this.Precio,
             this.Imagen});
-            this.tablaProductos.Location = new System.Drawing.Point(29, 200);
+            this.tablaProductos.Location = new System.Drawing.Point(32, 57);
             this.tablaProductos.Name = "tablaProductos";
-            this.tablaProductos.Size = new System.Drawing.Size(566, 416);
+            this.tablaProductos.Size = new System.Drawing.Size(605, 508);
             this.tablaProductos.TabIndex = 1;
+            this.tablaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaProductos_CellContentClick);
             // 
             // Id
             // 
@@ -90,7 +91,7 @@
             // 
             // btn_agregar_producto
             // 
-            this.btn_agregar_producto.Location = new System.Drawing.Point(42, 78);
+            this.btn_agregar_producto.Location = new System.Drawing.Point(682, 78);
             this.btn_agregar_producto.Name = "btn_agregar_producto";
             this.btn_agregar_producto.Size = new System.Drawing.Size(127, 54);
             this.btn_agregar_producto.TabIndex = 2;
@@ -100,9 +101,9 @@
             // 
             // btn_eliminar_producto
             // 
-            this.btn_eliminar_producto.Location = new System.Drawing.Point(214, 78);
+            this.btn_eliminar_producto.Location = new System.Drawing.Point(682, 172);
             this.btn_eliminar_producto.Name = "btn_eliminar_producto";
-            this.btn_eliminar_producto.Size = new System.Drawing.Size(116, 53);
+            this.btn_eliminar_producto.Size = new System.Drawing.Size(127, 57);
             this.btn_eliminar_producto.TabIndex = 3;
             this.btn_eliminar_producto.Text = "Eliminar Producto";
             this.btn_eliminar_producto.UseVisualStyleBackColor = true;
